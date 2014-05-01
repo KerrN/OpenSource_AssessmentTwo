@@ -2,7 +2,8 @@
 public class Vehicle {
 	private String			manufacturer;
 	private String			model;
-	private int				makeYear;
+	private int			makeYear;
+        private String                  fuelType;
 
 	private Journey			journey;
 	
@@ -16,6 +17,7 @@ public class Vehicle {
 		this.manufacturer = "Central";
 		this.model = "ITWEB";
 		this.makeYear = 2014;
+                this.fuelType = "unleaded";
 		journey = new Journey();
 		fuelPurchase = new FuelPurchase(125.6);
 	}
@@ -28,10 +30,11 @@ public class Vehicle {
 	 * @param model
 	 * @param makeYear
 	 */
-	public Vehicle(String manufacturer, String model, int makeYear) {
+	public Vehicle(String manufacturer, String model, int makeYear, String fuelType) {
 		this.manufacturer = manufacturer;
 		this.model = model;
 		this.makeYear = makeYear;
+                this.fuelType = fuelType;
 		journey = new Journey();
 		fuelPurchase = new FuelPurchase(125.6);
 	}
