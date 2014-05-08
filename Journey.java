@@ -9,14 +9,29 @@ public class Journey {
 	public Journey() {
 		this.kilometers = 0;
 	}
+        
+        /*
+         * New Constructor, James
+         *
+         * Class constructor specifying kilometers
+         * 
+        */
+        public Journey(double kilometers)
+        {
+            this.kilometers = kilometers;
+        }
 
 	/**
 	 * Appends the distance parameter to {@link #kilometers}
 	 * @param kilometers the distance traveled 
 	 */
 	public void addKilometers(double kilometers) {
+            
+                /* For Debugging
 		System.err.println(this.kilometers);
 		System.err.println(kilometers);
+                */
+            
 		this.kilometers += kilometers;
 	}
 
