@@ -7,9 +7,9 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Vehicle v = new Vehicle("Ford", "T812", 2014);
+		Vehicle v = new Vehicle("Ford", "T812", 2014,true);
 
-		v.printDetails();
+		//v.print();
 		
 		// Vehicle sample distance
 		for (int i = 0; i < 10; i++) {
@@ -18,7 +18,7 @@ public class Main {
 		
 		System.out.println("\n\n");
 		
-		v.printDetails();
+		v.print();
 	}
 
 }
