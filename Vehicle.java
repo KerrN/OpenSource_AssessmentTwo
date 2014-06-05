@@ -44,6 +44,7 @@ public class Vehicle {
 		System.out.println("Model: " + model);
 		System.out.println("Make Year: " + makeYear);
 		System.out.println("Total Kilometers Travelled: " + journey.getKilometers());
+		System.out.println("Fuel used: " + getFuelUsed());
 		System.out.println("Total Services: " + journey.getTotalServices());
 	}
 
@@ -55,6 +56,11 @@ public class Vehicle {
 	 */
 	public void addKilometers(double distance) {
 		journey.addKilometers(distance);
+	}
+	
+	public double getFuelUsed(){
+		return ((journey.getKilometers()/100) * fuelPurchase.getFuelEconomy());
+		//according to 'phase 2' doc, fuelEconomy represents litres of fuel required per 100kms
 	}
 
 }
